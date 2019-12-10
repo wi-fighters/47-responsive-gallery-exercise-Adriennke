@@ -13,19 +13,13 @@ html {
 }
 
 li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
   list-style-type: none;
 }
 
 /* Layout */
 
 .container {
-  margin: 3px;
+  margin: auto;
   max-width: 1600px;
   /* 4 x image */
 }
@@ -61,7 +55,9 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1px;
+  /* border: 2px;
+  box-sizing: border-box; */
+
 }
 
 /*
@@ -69,9 +65,12 @@ When there's room for more than 1 column of 400px-wide images,
 change the layout of the gallery to show 2 columns
 */
 @media screen and (min-width: 400px) {
-  ul {
-    /* ??? */
-  }
+  /* ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  } */
 
   li {
     width: calc(100% / 2);
